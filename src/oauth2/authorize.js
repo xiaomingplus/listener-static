@@ -2,7 +2,7 @@ import {getQuery} from '../utils';
 import {time} from 'general-js-utils';
 import {request} from '../utils';
 import store from 'store';
-import '../../node_modules/notie/notie.scss';
+import 'notie/src/notie.scss';
 import notie from 'notie';
 (async ()=>{
   var channel_id = getQuery("channel_id");

@@ -1,5 +1,5 @@
 import './signin.scss';
-import '../../node_modules/notie/notie.scss';
+import 'notie/src/notie.scss';
 import notie from 'notie';
 import store from 'store';
 import {countDown,checkTel,checkValid,showError,hideError,request} from '../utils';
