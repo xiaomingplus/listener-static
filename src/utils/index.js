@@ -40,15 +40,15 @@ export var checkValid = function(value){
   return reg.test(value);
 }
 export var request = function(uri, method = "get", body={}) {
-  let host = "http://192.168.31.172:3000/",url="";
+  let url="";
   let server = {
-    'oauth2':"http://192.168.31.172:3001/",
-    'api':"http://192.168.31.172:3000/"
+    'oauth2':"http://oauth2.jiantingzhe.com/",
+    'api':"http://api.jiantingzhe.com/"
   };
 
     return new Promise(function(s, f) {
       if(typeof uri === 'string'){
-        url = host+uri;
+        url = server.api+uri;
       }else{
         if(uri.href){
           url = uri.href;
