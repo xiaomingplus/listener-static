@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var rootPath = path.join(__dirname);
 module.exports = {
     context:path.join(rootPath, "src"),
@@ -41,7 +42,7 @@ module.exports = {
            'Promise': 'imports?this=>global!exports?global.Promise!es6-promise',
            'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
        }),
-       new webpack.NoErrorsPlugin(),
+       new webpack.NoErrorsPlugin()
    ]
 
 };
