@@ -1,0 +1,21 @@
+@import "../common.scss";
+$baseWidth:270px;
+.signin-form{
+  min-width: $baseWidth;
+  width:100%;
+  max-width:500px;
+  padding-top: 100px;
+}
+.signin-form input{
+  min-width: $baseWidth;
+}
+#tel{
+  padding-right: 115px;
+}
+.valid{
+  position: absolute;
+  right:8px;
+  top:8px;
+  height:3.1rem;
+  font-size: 1rem;
+}
