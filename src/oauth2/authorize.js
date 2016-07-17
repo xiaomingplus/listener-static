@@ -29,7 +29,7 @@ import notie from 'notie';
     return;
   }
   const expire = store.get("expire");
-
+  console.log('expire:'+expire);
   if(expire){
     if(parseInt(expire)<=time()){
       store.clear();

@@ -65,6 +65,7 @@ export var request = function(uri, method = "get", body={}) {
           "Content-Type": "application/json"
       };
       let token = store.get('token');
+      console.log("token:"+token);
       if(token){
         headers.Authorization = token;
       }
@@ -81,6 +82,7 @@ export var request = function(uri, method = "get", body={}) {
           // console.log(response);
             if (response.ok) {
                 response.json().then(function(data) {
+                  console.log(data);
                   s(data);
                   return;
                 }).catch(function(e) {
